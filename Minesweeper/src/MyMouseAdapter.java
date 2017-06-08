@@ -45,7 +45,7 @@ public class MyMouseAdapter extends MouseAdapter {
 			int u,v;
 			u=generator.nextInt(MyPanel.TOTAL_COLUMNS-1)+1;
 			v=generator.nextInt(MyPanel.TOTAL_ROWS-1-1)+1;
-			System.out.println("Bomb"+b+"="+"	x:"+u+"	y:"+v);
+			
 			if(!bombs[u][v]){
 				bombs[u][v]=true;
 				bitMap[u][v] = 99;
@@ -382,7 +382,7 @@ public class MyMouseAdapter extends MouseAdapter {
 						else {
 							flagsPressed=true;
 							if(flag[gridX2][gridY2]==0&&flagUsed<max){
-								//Color newColor=Color.RED;
+								
 								myPanel2.colorArray[myPanel2.mouseDownGridX][myPanel2.mouseDownGridY] = Color.RED;
 								myPanel2.repaint();
 								flag[gridX2][gridY2]=1;
